@@ -10,6 +10,33 @@ namespace CustomDataStructures
     {
         static void Main(string[] args)
         {
+            List<int> list = new List<int>(6);
+            list.Add(5);
+            list.Add(6);
+            list.Add(7);
+            int f = list[1];
+            Console.WriteLine(f);
+            list.RemoveAt(1);
+            f = list[1];
+            Console.WriteLine(f);
+            Console.WriteLine(list.Count);
+
+            MyList<int> myList = new MyList<int>();
+            myList.Add(7);
+            myList.Add(8);
+            myList.Add(9);
+            myList.Add(10);
+            Console.WriteLine("List's Array's Length: " + myList.arr.Length);
+            myList.Add(11);
+            Console.WriteLine("List's Array's Length: " + myList.arr.Length);
+
+            Console.WriteLine("myList[1] = " + myList[1]);
+            myList.RemoveAt(1);
+            Console.WriteLine("List's Array's Length: " + myList.arr.Length);
+            Console.WriteLine("myList[1] = " + myList[1]);
+
+            // Waits for a pressed key
+            Console.ReadKey();
         }
     }
 }
