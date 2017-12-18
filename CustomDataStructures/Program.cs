@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,16 @@ namespace CustomDataStructures
             myList.RemoveAt(1);
             Console.WriteLine("List's Array's Length: " + myList.arr.Length);
             Console.WriteLine("myList[1] = " + myList[1]);
+            myList.Remove(9);
+            Console.WriteLine("myList[1] = " + myList[1]);
+
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(5);
+            arrayList.Add(myList);
+            int n = (int) arrayList[0];
+            arrayList[0] = 8;
+
+            MyList<int> bar = (MyList<int>) arrayList[1];
 
             // Waits for a pressed key
             Console.ReadKey();

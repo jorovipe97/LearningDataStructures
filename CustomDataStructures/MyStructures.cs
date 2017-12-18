@@ -66,11 +66,12 @@ namespace CustomDataStructures
             count++;
         }
 
+
         /// <summary>
-        /// Sets the 
+        /// Sets/Gets the item at specified index 
         /// </summary>
-        /// <param name="index"></param>
-        /// <returns></returns>
+        /// <param name="index">Item index to select</param>
+        /// <returns>The item at specified index</returns>
         /// 
         /* this notation is known as indexers, and allow us to make 
          * possible to the client code access the array using [] notation
